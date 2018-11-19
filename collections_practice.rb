@@ -53,12 +53,15 @@ def merge_data(keys,data)
 end
 
 def find_cool(array)
-  array.each do |element|
+  x = []
+  array.each do |element| # index
     element.each do |keys,values|
-      
+      if element[keys] == "cool"
+        x << element
+        return 
+      end 
     end 
   end
-  
 end
 
 def organize_schools
