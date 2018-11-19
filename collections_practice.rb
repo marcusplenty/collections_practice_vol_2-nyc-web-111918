@@ -58,7 +58,7 @@ def find_cool(array)
     element.each do |keys,values|
       if element[keys] == "cool"
         x << element
-        return 
+        return x
       end 
     end 
   end
