@@ -34,19 +34,19 @@ def count_elements(array)
 end
 
 def merge_data(keys,data)
-  i = 0
   arr1 = []
-  keys.each do |hash|
-    arr1 << hash
-    j = 0
-    data.each do |hash2| #array index
+  i = 0
+  keys.each do |hash1| 
+    arr1 << hash1
+    data.each do |hash2| #array index 0,1
         hash2.each do |k1,v1| #blake -> {}
-          v1.each do |k2,v2| #awesome -> values
-            arr1[i][k2] = v2
+          if k1 == hash1[:first_name] 
+            v1.each do |k2,v2| #awesomes -> values
+              arr1[i][k2] = v2
+            end
           end
         end
-      end
-    j+=1
+      
     end
     i+=1
   end
