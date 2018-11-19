@@ -37,8 +37,6 @@ def merge_data(keys,data)
   arr1 = []
   keys.each do |hash|
     arr1 << hash
-  end
-  i =0
   data.each do |hash2| #array index
       hash2.each do |k1,v1| #blake -> {}
         v1.each do |k2,v2| #awesome -> values
