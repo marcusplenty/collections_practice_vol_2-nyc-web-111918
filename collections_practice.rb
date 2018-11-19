@@ -69,11 +69,11 @@ def organize_schools(hash)
   hash.each do |k1,v1| # school name -> hash of location
     v1.each do |k2,v2| # location -> city
       if hash2.has_key?(v2)
-        
+         hash2[v2] << k1
       else
-        hash2[v2] = 
+        hash2[v2] = [k1]
+      end
     end
-    
   end
   
 end 
