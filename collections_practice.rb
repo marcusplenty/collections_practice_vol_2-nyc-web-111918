@@ -37,13 +37,18 @@ def merge_data(keys,data)
   arr1 = []
   keys.each do |hash|
     arr1 << hash
-  data.each do |hash2| #array index
-      hash2.each do |k1,v1| #blake -> {}
-        v1.each do |k2,v2| #awesome -> values
-          arr1[i][k2] = v2
+    j = 0
+    data.each do |hash2| #array index
+      if j == 0
+        hash2.each do |k1,v1| #blake -> {}
+          v1.each do |k2,v2| #awesome -> values
+            arr1[i][k2] = v2
+          end
         end
       end
-      i+=1
+    j+=1
+    end
+    i+=1
   end
 end
 
