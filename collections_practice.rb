@@ -34,6 +34,7 @@ def count_elements(array)
 end
 
 def merge_data(keys,data)
+  i = 0
   arr1 = []
   keys.each do |hash|
     arr1 << hash
