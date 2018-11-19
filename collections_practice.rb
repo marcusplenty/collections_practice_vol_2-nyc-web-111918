@@ -52,7 +52,12 @@ def merge_data(keys,data)
   end
 end
 
-def find_cool(arg)
+def find_cool(array)
+  array.each do |element|
+    element.each do |keys,values|
+      
+    end 
+  end
   
 end
 
