@@ -65,6 +65,9 @@ def find_cool(array)
 end
 
 def organize_schools(hash)
-  
+  hash2 = {}
+  hash.each do |k1,k2|
+    
+  end
   
 end 
