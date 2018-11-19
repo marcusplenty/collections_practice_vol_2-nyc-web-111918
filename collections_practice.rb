@@ -45,9 +45,8 @@ def merge_data(keys,data)
           arr1[i][k2] = v2
         end
       end
-    end
-  i+=1
-  end        
+      i+=1
+  end
 end
 
 def find_cool(arg)
