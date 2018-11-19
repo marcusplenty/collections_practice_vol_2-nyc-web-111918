@@ -75,5 +75,6 @@ def organize_schools(hash)
       end
     end
   end
+  return hash2
   
 end 
