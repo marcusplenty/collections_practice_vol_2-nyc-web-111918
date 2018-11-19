@@ -41,7 +41,7 @@ def merge_data(keys,data)
     data.each do |hash2|
       hash2.each do |k1,v1|
         v1.each do |k2,v2|
-          arr1[i][k2] = v2
+          arr1[1][k2] = v2
         end
       end
     end
